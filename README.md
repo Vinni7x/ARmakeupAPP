@@ -70,7 +70,7 @@ Ao iniciar o aplicativo, siga os passos abaixo para a melhor experiência:
 
    * Movimentação: Pode virar o rosto levemente para os lados; a maquiagem acompanhará a rotação e a deformação da face (como ao falar ou abrir a boca).
 
-#📲 Instalação e Teste (APK)
+# 📲 Instalação e Teste (APK)
 A versão compilada está disponível para avaliação.
 
 Instruções:
