@@ -36,20 +36,20 @@ O processo criativo seguiu este pipeline:
 🛠 Tecnologias Utilizadas
 Engine Gráfica: Unity 2021.3.6f1
 
-    * Framework AR: Unity AR Foundation
+   * Framework AR: Unity AR Foundation
 
-    * Plugin Android: Google ARCore XR Plugin
+   * Plugin Android: Google ARCore XR Plugin
 
-    * Design e Texturização: Ibis Paint X
+   * Design e Texturização: Ibis Paint X
 
 # ⚙️ Requisitos de Sistema
 Para garantir a execução correta da Realidade Aumentada, o dispositivo deve atender aos seguintes critérios:
 
-     * Sistema Operacional: Android 7.0 (Nougat) ou superior (API Level 24+).
+   * Sistema Operacional: Android 7.0 (Nougat) ou superior (API Level 24+).
 
-    * Compatibilidade de Hardware: O dispositivo deve ser obrigatoriamente compatível com a tecnologia ARCore.
+   * Compatibilidade de Hardware: O dispositivo deve ser obrigatoriamente compatível com a tecnologia ARCore.
 
-    * Software Adicional: É necessário ter o app Google Play Services para RA instalado e atualizado via Play Store.
+   * Software Adicional: É necessário ter o app Google Play Services para RA instalado e atualizado via Play Store.
 
 # 📖 Manual de Uso
 Ao iniciar o aplicativo, siga os passos abaixo para a melhor experiência:
@@ -58,28 +58,38 @@ Ao iniciar o aplicativo, siga os passos abaixo para a melhor experiência:
 
 2. Posicionamento: Segure o celular na vertical e aponte a câmera para o seu rosto (como se fosse tirar uma selfie).
 
-       * O sistema identificará automaticamente os marcos faciais e aplicará a "malha invisível" de rastreamento.
+   * O sistema identificará automaticamente os marcos faciais e aplicará a "malha invisível" de rastreamento.
 
 3. Interação (Ativar/Desativar):
 
-        * Toque uma vez no botão desejado para aplicar a textura de maquiagem.
+   * Toque uma vez no botão desejado para aplicar a textura de maquiagem.
 
-        * Toque novamente no mesmo botão para remover a textura e voltar ao rosto limpo (limpar a seleção).
+   * Toque novamente no mesmo botão para remover a textura e voltar ao rosto limpo (limpar a seleção).
 
-        * O sistema permite visualizar um componente estético por vez.
+   * O sistema permite visualizar um componente estético por vez.
 
-        * Movimentação: Pode virar o rosto levemente para os lados; a maquiagem acompanhará a rotação e a deformação da face (como ao falar ou abrir a boca).
+   * Movimentação: Pode virar o rosto levemente para os lados; a maquiagem acompanhará a rotação e a deformação da face (como ao falar ou abrir a boca).
 
 #📲 Instalação e Teste (APK)
 A versão compilada está disponível para avaliação.
 
 Instruções:
 
-1. Acesse a aba deste repositório.
+Opção 1: GitHub Releases
 
-2. Baixe o arquivo .apk da Versão Final.
+   * Acesse a aba deste repositório.
 
-3. Instale no dispositivo Android.
+   * Baixe o arquivo .apk da Versão Final.
+
+Opção 2: Google Drive (Link Direto)
+
+   * Acesse o link: https://drive.google.com/file/d/12WD4wCcVQr1OLUeoBbgmRzGwsv6i69Cz/view?usp=sharing
+
+   * Faça o download e descompacte o arquivo (extrair) no seu celular ou PC.
+
+   * Transfira e instale o arquivo .apk no dispositivo.
+
+   * conceda as permissões de "Instalar de Fontes Desconhecidas", se for necessário
 
 ⚠️ IMPORTANTE: Ao abrir o app, conceda permissão de uso da CÂMERA. O rastreamento facial depende do feed de vídeo; sem isso, a tela ficará preta.
 
