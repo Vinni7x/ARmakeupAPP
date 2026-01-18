@@ -33,7 +33,7 @@ O processo criativo seguiu este pipeline:
 
 3. Mapeamento: Exportação em canais Alpha (PNG) para a correta sobreposição de materiais na Engine Unity.
 
-🛠 Tecnologias Utilizadas
+# 🛠 Tecnologias Utilizadas
 Engine Gráfica: Unity 2021.3.6f1
 
    * Framework AR: Unity AR Foundation
@@ -41,6 +41,21 @@ Engine Gráfica: Unity 2021.3.6f1
    * Plugin Android: Google ARCore XR Plugin
 
    * Design e Texturização: Ibis Paint X
+
+# 💻 Implementação e Lógica (Script: GerenciadorMascaras)
+A interação é controlada pelo script GerenciadorMascaras.cs. Este script altera diretamente o Face Prefab do ARFaceManager em tempo de execução.
+
+A lógica utiliza um sistema de Swap & Reset (Troca e Reinicialização) para garantir que a nova maquiagem seja carregada sem falhas visuais:
+
+1. Verificação (Toggle): Ao clicar em um botão (ex: Batom), o script verifica se o prefab atual já é o do Batom.
+
+  * Se for: Ele troca para o prefabLimpo (remove a maquiagem).
+
+  * Se não for: Ele troca para o prefabBatom.
+
+2. Destruição de Instâncias: O script varre a lista faceManager.trackables e destrói o rosto antigo que está na tela.
+
+3. Reinicialização do Rastreador: Para forçar o AR Foundation a instanciar o novo prefab imediatamente, é utilizada uma Coroutine que desliga e liga o faceManager com um intervalo de 1 frame (yield return null).
 
 # ⚙️ Requisitos de Sistema
 Para garantir a execução correta da Realidade Aumentada, o dispositivo deve atender aos seguintes critérios:
